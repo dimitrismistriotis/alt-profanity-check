@@ -1,7 +1,7 @@
 #
 # Under Construction
 #
-name: Release (dry-run)
+name: "Release (dry-run)"
 # on: [push, pull_request]
 on:
   workflow_run:
