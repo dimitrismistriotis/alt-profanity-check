@@ -2,11 +2,15 @@
 # Under Construction
 #
 name: Release (dry-run)
-on: pull_request
+on: [push, pull_request]
+on:
+  workflow_run:
+    workflows: [Black, Pytest]
+    types:
+      - completed
 jobs:
   pypi_upload:
     runs-on: ubuntu-latest
-    needs: [Black, Pytest]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
