@@ -1,4 +1,4 @@
-name: Black
+name: Checks
 on: [push, pull_request]
 jobs:
   black:
