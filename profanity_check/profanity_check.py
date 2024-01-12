@@ -1,13 +1,14 @@
 """Profanity check exposed methods"""
-import pkg_resources
+import importlib.resources
 import numpy as np
 import joblib
 
 vectorizer = joblib.load(
-    pkg_resources.resource_filename("profanity_check", "data/vectorizer.joblib")
+    importlib.resources.files("profanity_check") / "data/vectorizer.joblib"
 )
+
 model = joblib.load(
-    pkg_resources.resource_filename("profanity_check", "data/model.joblib")
+    importlib.resources.files("profanity_check") / "data/model.joblib"
 )
 
 
