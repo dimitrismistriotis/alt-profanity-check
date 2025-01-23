@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.6.1
+
+- scikit-learn to 1.6.1
+- Releasing with Trusted Publishers
+
 ## Version 1.5.2
 
 - scikit-learn to 1.5.2
