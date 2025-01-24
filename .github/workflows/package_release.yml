@@ -17,11 +17,13 @@ jobs:
           python-version: '3.12'
       - run: |
           python -m pip install --upgrade pip
-          pip install -U pip setuptools
-      - run: python setup.py sdist
+          pip install -U pip setuptools wheel
+      - run: python setup.py sdist bdist_wheel
       - uses: actions/upload-artifact@v4
         with:
+          name: dist-files
           path: ./dist
+  
   pypi-publish:
     name: Upload release to PyPI
     needs: build
@@ -32,4 +34,10 @@ jobs:
     permissions:
       id-token: write
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist-files
+          path: ./dist
       - uses: pypa/gh-action-pypi-publish@release/v1
+
