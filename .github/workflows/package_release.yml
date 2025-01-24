@@ -24,6 +24,7 @@ jobs:
           path: ./dist
   pypi-publish:
     name: Upload release to PyPI
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: release
