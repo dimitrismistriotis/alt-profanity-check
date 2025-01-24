@@ -24,6 +24,7 @@ jobs:
           path: ./dist
   pypi-publish:
     name: Upload release to PyPI
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: release
@@ -32,5 +33,3 @@ jobs:
       id-token: write
     steps:
       - uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          packages_dir: artifact/
