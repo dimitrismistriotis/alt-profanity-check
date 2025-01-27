@@ -185,28 +185,11 @@ python train_model.py
 
 ### Uploading to PyPi
 
-Currently trying to automate it using Github Actions; see:
-`.github/workflows/package_release.yml`.
+At this iteration, using Trusted Publishers, see: `.github/workflows/package_release.yml`.
 
-Setup:
-
-- Set up your "~/.pypirc" with the appropriate token
-- `pip install -r requirements_for_uploading.txt` which installs twine
-
-New Version:
-
-With `x.y.z` as the version to be uploaded:
-
-First tag:
-
-```shell
-git tag -a vx.y.z -m "Version x.y.z"
-git push --tags
-```
-
-Then upload:
-
-```shell
-python setup.py sdist
-twine upload dist/alt-profanity-check-x.y.z.tar.gz
-```
+- Go to "[Releases](https://github.com/dimitrismistriotis/alt-profanity-check/releases)"
+- Click "Draft a new release"
+- On the "Choose a tag" dropdown, create a tag for the current release version, which is following the scikit-learn tag
+- Title the release as "Version va.b.c" with `a.b.c` being the tag from the previous step
+- Also click "Generate release notes" to have the delta from the previous release documented
+- Finally, "Publish release" from the bottom of the page
