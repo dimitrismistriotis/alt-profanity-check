@@ -84,14 +84,9 @@ See the How section below for more details on the dataset used for these results
 pip install alt-profanity-check
 ```
 
-### Older Python Versions
+#### Python 3.9
 
-Reference: <https://scikit-learn.org/stable/install.html>
-
-> Scikit-learn 0.20 was the last version to support Python 2.7 and Python 3.4. Scikit-learn 
-> 0.21 supported Python 3.5-3.7. Scikit-learn 0.22 supported Python 3.5-3.8. Scikit-learn 0.23-0.24 
-> required Python 3.6 or newer. Scikit-learn 1.0 supported Python 3.7-3.10. Scikit-learn 1.1, 1.2 and 1.3 
-> support Python 3.8-3.12 Scikit-learn 1.4 requires Python 3.9 or newer.
+Scikit Learn supports Python >= 3.10, we had a reference for earlier versions, this makes last supported one **1.6.1**.
 
 #### Python 3.8
 
@@ -106,6 +101,15 @@ From 1.1.2 and later, Python 3.7 is not supported, hence if you are using 3.6 pi
 
 Following Scikit-learn, **Python3.6** is not supported after its 1.0 version if you are using 3.6 pin
 alt-profanity-check to **0.24.2**.
+
+### Older Python Versions
+
+Reference: <https://scikit-learn.org/stable/install.html>
+
+> Scikit-learn 0.20 was the last version to support Python 2.7 and Python 3.4. Scikit-learn
+> 0.21 supported Python 3.5-3.7. Scikit-learn 0.22 supported Python 3.5-3.8. Scikit-learn 0.23-0.24
+> required Python 3.6 or newer. Scikit-learn 1.0 supported Python 3.7-3.10. Scikit-learn 1.1, 1.2 and 1.3
+> support Python 3.8-3.12 Scikit-learn 1.4 requires Python 3.9 or newer.
 
 ## Usage
 
@@ -181,6 +185,12 @@ With the above in place:
 ```shell
 cd profanity_check/data
 python train_model.py
+```
+
+### Test
+
+```shell
+python -m pytest --import-mode=append tests/
 ```
 
 ### Uploading to PyPi
