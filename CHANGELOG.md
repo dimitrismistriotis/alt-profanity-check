@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.7.0
+
+- scikit-learn to 1.7.0
+- Dropped references in `requirements.txt` for Python version less than 3.10
+
 ## Version 1.6.1
 
 - scikit-learn to 1.6.1
