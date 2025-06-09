@@ -187,7 +187,7 @@ cd profanity_check/data
 python train_model.py
 ```
 
-Then:
+### Test
 
 ```shell
 python -m pytest --import-mode=append tests/
