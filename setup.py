@@ -7,7 +7,7 @@ long_description = Path("README.md").read_text(encoding="utf8")
 
 setuptools.setup(
     name="alt-profanity-check",
-    version="1.7.0",
+    version="1.7.1",
     author="Victor Zhou (original author), Menelaos Kotoglou, Dimitrios Mistriotis",
     author_email="dimitrios@mistriotis.com",
     description=(
