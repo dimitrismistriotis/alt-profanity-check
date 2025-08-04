@@ -3,6 +3,6 @@
 #
 -r requirements.txt
 
-pytest==8.4.0
+pytest==8.4.1
 pylint==3.3.7
 black==25.1.0
