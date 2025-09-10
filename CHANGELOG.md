@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.7.2
+
+- scikit-learn to 1.7.2
+- numpy to 2.3.3
+- pandas to 2.3.2
+
 ## Version 1.7.1
 
 - scikit-learn to 1.7.1
