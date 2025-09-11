@@ -22,7 +22,7 @@ setuptools.setup(
         "scikit-learn==1.7.2",
         "joblib==1.5.1",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.10",
     package_data={"profanity_check": ["data/model.joblib", "data/vectorizer.joblib"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
