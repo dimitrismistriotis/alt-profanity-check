@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 1.8.0 - 2026-01-13
+## Version 1.8.0
 
 - Updated scikit-learn to 1.8.0
 - Updated joblib to 1.5.3

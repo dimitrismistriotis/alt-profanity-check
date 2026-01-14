@@ -84,6 +84,10 @@ See the How section below for more details on the dataset used for these results
 pip install alt-profanity-check
 ```
 
+#### Python 3.10
+
+Scikit Learn 1.8 requires Python >= 3.11, last version supporting Python 3.10 is **1.7.2**.
+
 #### Python 3.9
 
 Scikit Learn supports Python >= 3.10, we had a reference for earlier versions, this makes last supported one **1.6.1**.
