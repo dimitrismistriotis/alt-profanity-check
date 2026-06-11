@@ -63,7 +63,7 @@ if __name__ == "__main__":
             "Please download the data again."
         )
 
-    data = pd.read_csv(DATA_FILE_NAME)
+    data = pd.read_csv(DATA_FILE_NAME).dropna(subset=["text", "is_offensive"])
     texts = data["text"].astype(str)
     y = data["is_offensive"]
 
