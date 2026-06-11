@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 1.9.0
+
+- Updated scikit-learn to 1.9.0
+- Updated numpy to 2.4.6
+- Updated pandas to 3.0.3
+- Updated scipy to 1.17.1
+- Fixed train_model.py for pandas 3.0 compatibility (dropna before training)
+- Retrained models with updated dependencies
+
 ## Version 1.8.0
 
 - Updated scikit-learn to 1.8.0

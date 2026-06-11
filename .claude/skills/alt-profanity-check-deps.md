@@ -65,7 +65,16 @@ pip install -r development_requirements.txt
 
 ### 5. Retrain Models
 
-Models MUST be retrained with the new scikit-learn version:
+Models MUST be retrained with the new scikit-learn version.
+
+**Important (macOS):** `decompress_data` uses `#!/bin/env bash` which doesn't exist on macOS (correct path is `/usr/bin/env`). If `clean_data.csv` is missing, decompress manually first:
+
+```bash
+cd profanity_check/data
+7z x clean_data.csv.7z clean_data.csv   # brew install p7zip if needed
+```
+
+Then train:
 
 ```bash
 cd profanity_check/data
