@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.9.1
+
+- Updated scikit-learn to 1.9.1
+- Updated joblib to 1.6.0
+- Updated pandas to 3.0.5
+
 ## Version 1.9.0
 
 - Updated scikit-learn to 1.9.0
